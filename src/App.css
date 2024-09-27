@@ -1,38 +1,36 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  height: 100vh; /* Full viewport height */
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-direction: column; /* Align items vertically */
 }
 
-.App-link {
-  color: #61dafb;
+.App {
+  display: flex;
+  flex-direction: column; /* Align items vertically */
+  height: 100%; /* Full height for the app */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.main-content {
+  flex-grow: 1; /* Allow main content to take available space */
+  overflow-y: auto; /* Enable vertical scrolling */
+  padding: 20px; /* Padding for the main content area */
+  background-color: #f4f4f4; /* Light background for contrast */
+}
+
+.simple-content {
+  text-align: center; /* Center text within the content */
+  max-width: 600px; /* Limit width for better readability */
+  margin: auto; /* Center content horizontally */
+  padding: 20px; /* Padding around content */
+  border-radius: 5px; /* Slight rounding of corners */
+}
+
+.simple-content h2 {
+  margin-top: 0; /* Remove top margin for h2 */
+}
+
+.simple-content p {
+  font-size: 1.2rem; /* Font size for paragraph */
 }
